@@ -1,3 +1,9 @@
+import pyfiglet
+
+ascii_art = pyfiglet.figlet_format("HARGA TANAH", font="slant")
+
+print(ascii_art)
+
 def hitung_harga_tanah(panjang, lebar, harga_per_meter):
     luas = panjang * lebar
     total_harga = luas * harga_per_meter
@@ -75,13 +81,4 @@ try:
 except ValueError:
     print("Input harus berupa angka!")
 
-
-# Menawarkan pilihan untuk melanjutkan atau keluar
-        lanjut = input("\nApakah Anda ingin menghitung harga tanah lagi? (ya/tidak): ").strip().lower()
-        if lanjut != "ya":
-            print("\nTerima kasih telah menggunakan program ini. Sampai jumpa!")
-            break
-
-# Menjalankan program
-if __name__ == "__main__":
-    main()
+    #NANTI DIKEMBAANGIN LAGI BUAT RETURN INPUT ANGKA METER LAGI
